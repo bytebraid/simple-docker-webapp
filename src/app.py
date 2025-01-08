@@ -10,7 +10,9 @@ logging = get_logger()
 @app.route("/hello", methods=["GET"])
 def hello_world():
     logging.info("Hello world called")
-    return jsonify({"message": "hello world"})
+    return jsonify(
+        {"message": "hello world - visit https://github.com/bytebraid/simple-docker-webapp"}
+    )
 
 
 if __name__ == "__main__":
