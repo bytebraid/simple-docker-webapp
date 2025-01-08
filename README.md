@@ -1,4 +1,4 @@
-|Python compat| |GHA tests|
+[![Main build + tests](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml/badge.svg)](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml)
 
 Usage
 =====
