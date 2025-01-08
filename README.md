@@ -8,8 +8,8 @@ This is a simple hello world web app with CI / CD workflows, contained in Docker
 
 Clone the repository.
 
+Use run.sh or manually run the docker commands to build and start the container.
 
-
-It deploys a flask server on port 11000. Visit /hello to get a response.
+It deploys a flask server on port 11000. Visit http://localhost:11000/hello to get a response.
 
 A self hosted runner is building and serving this codebase behind an nginx reverse proxy at https://radon.parallaxed.net/hello
