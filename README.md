@@ -1,10 +1,14 @@
-[![Main build + tests](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml/badge.svg)](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml) [![Runner Deployment](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/docker-deploy.yaml/badge.svg)](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/docker-deploy.yaml)
+[![Main build + tests](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml/badge.svg)](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml) [![Runner Deployment](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/docker-deploy.yaml/badge.svg)](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/docker-deploy.yaml) [![Coverage Status]((https://github.com/bytebraid/simple-docker-webapp/reports/coverage/coverage-badge.svg?dummy=8484744)]((https://github.com/bytebraid/simple-docker-webapp/reports/coverage/index.html)
 
 
 Usage
 =====
 
-This is a simple hello world web app with CI / CD workflows.
+This is a simple hello world web app with CI / CD workflows, contained in Docker.
+
+Clone the repository.
+
+
 
 It deploys a flask server on port 11000. Visit /hello to get a response.
 
