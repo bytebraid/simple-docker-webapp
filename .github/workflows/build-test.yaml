@@ -28,7 +28,7 @@ jobs:
 
     - name: Test application
       run: |
-        python -m unittest discover -s tests
+        python -m unittest discover -s src
 
   docker-build:
     runs-on: ubuntu-latest
