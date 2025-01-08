@@ -1,4 +1,4 @@
-name: Build and Test
+name: Main build + tests
 
 on:
   push:
@@ -55,19 +55,4 @@ jobs:
       run: |
         docker stop simple-docker-webapp
         docker rm simple-docker-webapp
-
-  docker-deploy:
-    runs-on: self-hosted
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Build Docker image
-      run: |
-        docker build -t simple-docker-webapp .
-
-    - name: Run Docker container
-      run: |
-        docker run -d -p 11000:11000 --name simple-docker-webapp simple-docker-webapp
 

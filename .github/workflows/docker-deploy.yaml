@@ -1,0 +1,25 @@
+name: Runner Deployment
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  docker-deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: |
+        docker build -t simple-docker-webapp .
+
+    - name: Run Docker container
+      run: |
+        docker run -d -p 11000:11000 --name simple-docker-webapp simple-docker-webapp
+
