@@ -1,10 +1,11 @@
 from flask import Flask, jsonify
 from tools.logs import get_logger
 from decouple import config
+from pathlib2 import Path
 
 app = Flask(__name__)
 PORT = config("PORT", default="11000")
-logging = get_logger(Path(__file__).name)
+logging = get_logger(LOG_NAME=Path(__file__).name)
 
 
 @app.route("/hello", methods=["GET"])
