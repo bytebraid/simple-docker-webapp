@@ -12,19 +12,10 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Stop and clean up Docker container
-      run: |
-        sudo -g docker docker stop simple-docker-webapp
-        sudo -g docker docker rm simple-docker-webapp
-
     - name: Checkout code
       uses: actions/checkout@v3
-
-    - name: Build Docker image
+    - name: Stop and clean up Docker, then build and run
       run: |
-        sudo -g docker docker build -t simple-docker-webapp .
+        sudo -g docker run.sh
 
-    - name: Run Docker container
-      run: |
-        sudo -g docker docker run -d -p 11000:11000 --name simple-docker-webapp simple-docker-webapp
 
