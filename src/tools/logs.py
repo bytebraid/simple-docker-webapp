@@ -17,6 +17,10 @@ def get_logger(
     LOG_FILE_INFO=str(LOG_INFO),
     LOG_FILE_ERROR=str(LOG_ERROR),
 ):
+    """Returns a custom logger tailored for the calling context
+    providing precise details of line number and file along
+    with the message or exception and stack trace.
+    """
     log = logging.getLogger(LOG_NAME)
     log_formatter = logging.Formatter(LOG_FORMAT)
 
@@ -37,7 +41,7 @@ def get_logger(
     except Exception:
         print("Logging to console only")
         pass
-    # Dynamic debug switch?
+
     log.setLevel(LOG_LEVEL)
 
     return log
