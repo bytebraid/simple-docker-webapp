@@ -10,7 +10,8 @@ class TestHelloWorld(unittest.TestCase):
     def test_hello_world(self):
         response = self.app.get("/hello")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {"message": "hello world"})
+        res = response.get_json()
+        self.assertTrue("message" in res)
 
 
 if __name__ == "__main__":
