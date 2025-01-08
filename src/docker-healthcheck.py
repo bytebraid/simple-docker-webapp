@@ -1,3 +1,11 @@
+""" This class does a simple health check and returns a POSIX 
+    status code, 0 if healthy, 1 if the app is not responding 
+    correctly. Docker runs this healthcheck periodically to 
+    ascertain if the container is behaving correctly. It can stop
+    the container if the healthcheck fails, and restart if 
+    a policy is defined.
+"""
+
 import urllib.request
 import sys
 from tools.logs import get_logger
