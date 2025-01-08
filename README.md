@@ -1,4 +1,5 @@
-[![Main build + tests](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml/badge.svg)](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml)
+[![Main build + tests](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml/badge.svg)](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/build-test.yaml) [![Runner Deployment](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/docker-deploy.yaml/badge.svg)](https://github.com/bytebraid/simple-docker-webapp/actions/workflows/docker-deploy.yaml)
+
 
 Usage
 =====

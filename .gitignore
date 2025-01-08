@@ -1,6 +1,6 @@
 .git
 *.pub
-
+*.pytest*
 # dependencies
 /node_modules
 /.pnp
