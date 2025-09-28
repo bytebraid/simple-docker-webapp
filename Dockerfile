@@ -13,9 +13,11 @@ COPY src .
 # Expose the port 
 EXPOSE 11000
 
+USER nobody
+
 # Custom monitoring script to check container health
 HEALTHCHECK --interval=3m CMD python /src/docker-healthcheck.py
-	
+
 # Command to run
 CMD ["python", "app.py"]
 
