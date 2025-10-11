@@ -14,4 +14,4 @@ It deploys a flask server on port 11000. Visit http://localhost:11000/hello to g
 
 Log files for the service are written to APP_ROOT as defined in settings.ini, visible from within the container.
 
-A self hosted runner is building and serving this codebase behind an nginx reverse proxy at https://radon.parallaxed.net/hello
+A self hosted runner is building and serving this container at https://parallaxed.net/hello
